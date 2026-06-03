@@ -130,12 +130,14 @@ public class calculator_controller {
         resultLabel.setText(currentInput.toString());
     }
 
-    @FXML
-    private void handlePercent(ActionEvent event) {
-        double val   = parseCurrentInput() / 100.0;
-        String str   = formatNumber(val);
-        currentInput = new StringBuilder(str);
-        resultLabel.setText(str);
+    private String formatNumber(double val) {
+        if (Double.isNaN(val) || Double.isInfinite(val)) return "Error";
+        if (val == Math.floor(val) && Math.abs(val) < 1e15) {
+            return Long.toString((long) val);
+        }
+        String s = String.format("%.9f", val);
+        s = s.replaceAll("0+$", "").replaceAll("\\.$", "");
+        return s;
     }
 
     @FXML
