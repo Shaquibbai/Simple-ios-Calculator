@@ -1,0 +1,74 @@
+.root {
+    -fx-background-color: #1C1C1E;
+    -fx-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.root-vbox {
+    -fx-background-color: #1C1C1E;
+}
+
+.display {
+    -fx-background-color: #1C1C1E;
+    -fx-padding: 16 20 8 20;
+    -fx-alignment: bottom-right;
+    -fx-spacing: 2;
+    -fx-min-height: 130;
+}
+
+.expression-label {
+    -fx-text-fill: #8E8E93;
+    -fx-font-size: 22;
+    -fx-alignment: center-right;
+    -fx-max-width: infinity;
+}
+
+.result-label {
+    -fx-text-fill: white;
+    -fx-font-size: 64;
+    -fx-font-weight: 200;
+    -fx-alignment: center-right;
+    -fx-max-width: infinity;
+}
+
+.button-grid {
+    -fx-background-color: #1C1C1E;
+}
+
+.btn-number,
+.btn-func,
+.btn-operator {
+    -fx-pref-width:  70;
+    -fx-pref-height: 70;
+    -fx-min-width:   70;
+    -fx-min-height:  70;
+    -fx-max-width:   70;
+    -fx-max-height:  70;
+    -fx-background-radius: 35;
+    -fx-font-size: 28;
+    -fx-cursor: hand;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.btn-number {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+}
+.btn-number:hover   { -fx-background-color: #4A4A4A; }
+.btn-number:pressed { -fx-background-color: #5A5A5A; }
+
+.btn-func {
+    -fx-background-color: #A5A5A5;
+    -fx-text-fill: #1C1C1E;
+    -fx-font-size: 22;
+}
+.btn-func:hover   { -fx-background-color: #BFBFBF; }
+.btn-func:pressed { -fx-background-color: #D0D0D0; }
+
+.btn-operator {
+    -fx-background-color: #FF9500;
+    -fx-text-fill: white;
+    -fx-font-size: 32;
+}
+.btn-operator:hover   { -fx-background-color: #FFB143; }
+.btn-operator:pressed { -fx-background-color: #CC7800; }
